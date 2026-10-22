@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стек — тип личности через когнитивные функции</title>
+  <meta name="description" content="Тест по когнитивным функциям: узнай свой вероятный стек функций и 2–3 подходящих типа. Точное типирование — через интервью." />
+  <meta property="og:title" content="Стек — ты не четыре буквы" />
+  <meta property="og:description" content="Тест по когнитивным функциям. Узнай, в каком порядке работает твоё мышление." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--
+    ЯНДЕКС МЕТРИКА
+    1. Создай счётчик на metrika.yandex.ru (включи Вебвизор).
+    2. Вставь сюда код счётчика, который выдаст Метрика.
+    3. Замени COUNTER_ID в app.js на номер своего счётчика.
+    4. В Метрике создай цели типа «JavaScript-событие» с идентификаторами:
+       test_start, test_complete, click_telegram, click_share, test_restart
+  -->
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="wordmark" aria-label="Стек — на главную">
+        <span class="wordmark__dot" aria-hidden="true"></span>Стек
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#why">Почему функции</a>
+        <a href="#functions">8 функций</a>
+        <a href="#typing">Типирование</a>
+      </nav>
+      <a href="#test" class="btn btn--small" data-start>Пройти тест</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">MBTI · когнитивные функции</p>
+          <h1 class="hero__title reveal">
+            Ты — не <em>четыре</em> буквы.
+          </h1>
+          <p class="hero__lead reveal">
+            Тип определяют не ответы «интроверт или экстраверт», а порядок, в котором работают твои когнитивные функции. Тест покажет вероятный стек, интервью — точный ответ.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#test" class="btn" data-start>Пройти тест <span class="btn__meta">16 вопросов · 4 мин</span></a>
+            <a href="#functions" class="link-arrow">Что такое функции</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <svg id="wheel" class="wheel" viewBox="0 0 600 600"></svg>
+          <div class="wheel__caption">
+            <span class="mono">стек типа</span>
+            <span id="wheelStack" class="wheel__stack">Ni → Te → Fi → Se</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Ni — видение</span><span>Ne — возможности</span><span>Si — опыт</span><span>Se — момент</span><span>Ti — логика</span><span>Te — эффективность</span><span>Fi — ценности</span><span>Fe — связь</span>
+        <span>Ni — видение</span><span>Ne — возможности</span><span>Si — опыт</span><span>Se — момент</span><span>Ti — логика</span><span>Te — эффективность</span><span>Fi — ценности</span><span>Fe — связь</span>
+      </div>
+    </div>
+
+    <!-- WHY -->
+    <section class="why" id="why">
+      <div class="container why__grid">
+        <h2 class="section-title reveal">Почему буквы врут,<br />а функции — нет</h2>
+        <ol class="why__list">
+          <li class="reveal">
+            <span class="why__num">01</span>
+            <div>
+              <h3>Буквы описывают поведение</h3>
+              <p>«Я люблю планировать — значит, J». Но планировать любит и тот, кто тревожится, и тот, кто устал от хаоса. Поведение — следствие, а не причина.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="why__num">02</span>
+            <div>
+              <h3>Функции описывают механизм</h3>
+              <p>Как ты воспринимаешь информацию и как принимаешь решения. У каждого типа четыре ведущие функции в строгом порядке — это и есть стек.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="why__num">03</span>
+            <div>
+              <h3>Тест — гипотеза, интервью — ответ</h3>
+              <p>Самоотчёт искажён: мы отвечаем так, какими хотим себя видеть. Поэтому тест даёт 2–3 вероятных типа, а точный тип определяется в разговоре.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FUNCTIONS -->
+    <section class="functions" id="functions">
+      <div class="container">
+        <div class="functions__head">
+          <h2 class="section-title reveal">Восемь функций</h2>
+          <div class="tabs reveal" role="tablist" aria-label="Группа функций">
+            <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">Все</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="perceive">Восприятие</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="judge">Решения</button>
+          </div>
+        </div>
+        <div class="fgrid" id="fgrid"></div>
+      </div>
+    </section>
+
+    <!-- TEST -->
+    <section class="test" id="test">
+      <div class="container">
+        <div class="quiz" id="quiz" data-state="intro">
+
+          <!-- INTRO -->
+          <div class="quiz__intro" data-view="intro">
+            <p class="eyebrow eyebrow--light">Тест</p>
+            <h2 class="quiz__title">Как работает<br /><em>твоё</em> мышление</h2>
+            <p class="quiz__sub">16 утверждений. Отвечай, как есть на самом деле, а не как хотелось бы. Первый ответ обычно самый честный.</p>
+            <ul class="quiz__facts">
+              <li><span class="mono">16</span> вопросов</li>
+              <li><span class="mono">~4</span> минуты</li>
+              <li><span class="mono">0</span> регистраций</li>
+            </ul>
+            <button class="btn btn--light" id="startBtn">Начать</button>
+          </div>
+
+          <!-- QUESTION -->
+          <div class="quiz__run" data-view="question">
+            <div class="quiz__main">
+              <div class="quiz__top">
+                <span class="mono" id="qCounter">01 / 16</span>
+                <button class="quiz__back" id="backBtn" type="button">← Назад</button>
+              </div>
+              <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0" id="progress">
+                <div class="progress__bar" id="progressBar"></div>
+              </div>
+              <p class="quiz__q" id="qText" aria-live="polite"></p>
+              <fieldset class="scale" id="scale">
+                <legend class="visually-hidden">Насколько это про тебя</legend>
+                <button type="button" class="scale__opt" data-v="-2" aria-label="Совсем не про меня"><span></span></button>
+                <button type="button" class="scale__opt" data-v="-1" aria-label="Скорее не про меня"><span></span></button>
+                <button type="button" class="scale__opt" data-v="0" aria-label="Иногда"><span></span></button>
+                <button type="button" class="scale__opt" data-v="1" aria-label="Скорее про меня"><span></span></button>
+                <button type="button" class="scale__opt" data-v="2" aria-label="Точно про меня"><span></span></button>
+              </fieldset>
+              <div class="scale__labels"><span>Совсем не про меня</span><span>Точно про меня</span></div>
+              <p class="quiz__hint">Можно отвечать клавишами 1–5</p>
+            </div>
+            <aside class="quiz__side" aria-label="Профиль функций по ходу теста">
+              <span class="mono">твой профиль</span>
+              <svg id="radar" class="radar" viewBox="0 0 320 320"></svg>
+            </aside>
+          </div>
+
+          <!-- RESULT -->
+          <div class="quiz__result" data-view="result">
+            <div class="result__head">
+              <p class="eyebrow eyebrow--light">Вероятный тип</p>
+              <div class="result__type" id="rType">INTJ</div>
+              <p class="result__name" id="rName"></p>
+              <p class="result__stack mono" id="rStack"></p>
+            </div>
+
+            <div class="result__grid">
+              <div class="result__block">
+                <h3>Профиль функций</h3>
+                <div class="bars" id="rBars"></div>
+              </div>
+              <div class="result__block">
+                <h3>Совпадение со стеками</h3>
+                <ol class="alts" id="rAlts"></ol>
+                <div class="result__note">
+                  <p><strong>Это гипотеза, а не диагноз.</strong> Близкие по стеку типы в тесте часто путаются: самоотчёт не отличает зрелую функцию от выученного навыка. Точно тип определяется в интервью по функциям.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="result__cta">
+              <a href="https://t.me/your_channel" target="_blank" rel="noopener" class="btn btn--accent" data-goal="click_telegram">Точное типирование в Telegram</a>
+              <button type="button" class="btn btn--ghost" id="shareBtn">Поделиться результатом</button>
+              <button type="button" class="link-arrow link-arrow--light" id="restartBtn">Пройти заново</button>
+            </div>
+            <p class="share-status" id="shareStatus" role="status"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPING -->
+    <section class="typing" id="typing">
+      <div class="container typing__grid">
+        <div>
+          <p class="eyebrow reveal">Типирование</p>
+          <h2 class="section-title reveal">Тест сужает поиск.<br /><em>Разговор</em> находит ответ.</h2>
+        </div>
+        <div class="typing__steps">
+          <div class="step reveal">
+            <span class="mono">шаг 1</span>
+            <h3>Проходишь тест</h3>
+            <p>Получаешь профиль функций и 2–3 вероятных типа — это стартовая гипотеза.</p>
+          </div>
+          <div class="step reveal">
+            <span class="mono">шаг 2</span>
+            <h3>Интервью по функциям</h3>
+            <p>Разбираем реальные ситуации: как ты решаешь, где устаёшь, что делаешь под стрессом. Так видна разница между функцией и навыком.</p>
+          </div>
+          <div class="step reveal">
+            <span class="mono">шаг 3</span>
+            <h3>Разбор стека</h3>
+            <p>Твой тип, сильные стороны, ловушки мышления и то, как развивать слабые функции без насилия над собой.</p>
+          </div>
+          <a href="https://t.me/your_channel" target="_blank" rel="noopener" class="btn reveal" data-goal="click_telegram">Записаться в Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="wordmark wordmark--small"><span class="wordmark__dot" aria-hidden="true"></span>Стек</span>
+      <p>Тест носит ознакомительный характер и не является психологической диагностикой.</p>
+      <a href="https://t.me/your_channel" target="_blank" rel="noopener" data-goal="click_telegram">Telegram</a>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
